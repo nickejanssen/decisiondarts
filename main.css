@@ -1,0 +1,47 @@
+.container{
+	width: 1602px;
+}
+.dartboard-container{
+	border: 1px solid #000;
+	width: 800px;
+}
+.iframecontainer{
+	float: right; 
+	width: 800px;
+	height: 778px;	
+}
+.img-container{
+	padding-left: 25px;
+}
+.gobutton{
+	width: 200px;
+	height: 40px;
+	background-color: #33cc33;
+	color: #fff;
+	font-size: 25px;
+	font-family: arial;
+	margin-left: 20px;	
+}
+.dartscoreinput{
+	width: 50px;
+	border-radius: 4px;
+	font-size: 20px;
+	font-family: arial;
+	border: 2px solid #ccc;
+}
+.dartscorelabel{
+	font-size: 22px;
+	font-family: arial;
+}
+.scorescontainer{
+	margin-left: 100px;
+}
+#lastvisit{
+	margin-right: 30px;
+	margin-bottom: 5px;
+	width: 200px;
+	float: right;
+}
+#lastvisitlabel{
+	float:right;
+}

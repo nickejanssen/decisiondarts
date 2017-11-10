@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>dartboard</title>
+<link rel="stylesheet" href="main.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="jquery.imagemapster.min.js" type="text/javascript"></script>
+<script src="dartboard.js" type="text/javascript"></script>
+</head>
+	<body>
+
+<div class="container">
+		<div class="iframecontainer">
+			<iframe width="100%" height="100%" src="http://sharing.decisions.com/decisions/primary/h/?flowid=0b292238-336e-11e6-80cf-00155d0aea03&sessionid=ns-f07e33a1-34b4-11e6-80ba-00155d0aea02&forceformat=true&textscorevalues=stringvalue&location=topleft&chrome=off"></iframe>				
+		</div>
+		
+		<div class="dartboard-container" style="float:left;">
+			<div class="img-container">
+				<img src="board.jpg" alt="board" id="board" usemap="#boardmap"/>
+				<map name="boardmap">
+					<area shape="poly" coords="337,95,375,92,419,96,419,109,377,105,339,108" onclick="dartThrown(this.id)" id="D20" href="#" />
+					<area shape="poly" coords="339,111,379,109,416,112,404,196,377,194,351,195" onclick="dartThrown(this.id)" id="O20"  href="#" />
+					<area shape="poly" coords="353,198,376,197,403,199,401,212,380,211,355,212" onclick="dartThrown(this.id)" id="T20"  href="#" />
+					<area shape="poly" coords="355,216,375,214,400,216,379,340,373,340" onclick="dartThrown(this.id)" id="I20"  href="#" />
+					<area shape="poly" coords="424,97,462,106,502,122,496,135,461,120,422,110" onclick="dartThrown(this.id)" id="D1"  href="#" />
+					<area shape="poly" coords="422,114,455,123,493,139,457,213,436,204,408,196" onclick="dartThrown(this.id)" id="O1"  href="#" />
+					<area shape="poly" coords="407,200,430,206,454,215,448,228,428,220,405,214" onclick="dartThrown(this.id)" id="T1"  href="#" />
+					<area shape="poly" coords="404,217,426,221,447,231,389,343,382,340" onclick="dartThrown(this.id)" id="I1"  href="#" />
+					<area shape="poly" coords="507,124,539,144,573,173,564,184,535,160,500,138" onclick="dartThrown(this.id)" id="D18"  href="#" />
+					<area shape="poly" coords="497,141,529,159,562,186,501,246,460,215" onclick="dartThrown(this.id)" id="O18"  href="#" />
+					<area shape="poly" coords="458,218,479,232,499,248,489,257,470,241,452,230" onclick="dartThrown(this.id)" id="T18"  href="#" />
+					<area shape="poly" coords="450,233,468,243,487,259,397,348,393,344" onclick="dartThrown(this.id)" id="I18"  href="#" />
+					<area shape="poly" coords="576,177,603,209,625,244,614,250,591,214,567,187" onclick="dartThrown(this.id)" id="D4"  href="#" />
+					<area shape="poly" coords="564,190,588,216,609,252,535,290,504,249" onclick="dartThrown(this.id)" id="O4"  href="#" />
+					<area shape="poly" coords="501,252,519,272,532,292,520,297,508,278,492,260" onclick="dartThrown(this.id)" id="T4"  href="#" />
+					<area shape="poly" coords="489,263,505,279,517,299,404,355,400,352" onclick="dartThrown(this.id)" id="I4"  href="#" />
+					<area shape="poly" coords="627,249,642,285,652,326,639,330,631,291,616,255" onclick="dartThrown(this.id)" id="D13"  href="#" />
+					<area shape="poly" coords="611,257,626,293,635,330,552,343,537,294" onclick="dartThrown(this.id)" id="O13"  href="#" />
+					<area shape="poly" coords="533,295,541,318,548,342,535,345,530,321,522,301" onclick="dartThrown(this.id)" id="T13"  href="#" />
+					<area shape="poly" coords="518,303,526,321,531,346,407,365,405,360" onclick="dartThrown(this.id)" id="I13"  href="#" />
+					<area shape="poly" coords="654,331,657,372,653,415,639,414,642,372,639,334" onclick="dartThrown(this.id)" id="D6"  href="#" />
+					<area shape="poly" coords="636,335,637,375,636,411,553,398,554,371,553,348" onclick="dartThrown(this.id)" id="O6"  href="#" />
+					<area shape="poly" coords="548,348,549,371,548,398,535,396,538,373,536,350" onclick="dartThrown(this.id)" id="T6"  href="#" />
+					<area shape="poly" coords="533,351,533,372,531,397,407,376,407,370" onclick="dartThrown(this.id)" id="I6"  href="#" />
+					<area shape="poly" coords="651,419,642,459,627,499,614,493,628,463,637,417" onclick="dartThrown(this.id)" id="D10"  href="#" />
+					<area shape="poly" coords="551,403,634,417,624,456,609,490,535,452" onclick="dartThrown(this.id)" id="O10"  href="#" />
+					<area shape="poly" coords="533,398,547,401,540,428,531,450,520,444,528,425" onclick="dartThrown(this.id)" id="T10"  href="#" />
+					<area shape="poly" coords="405,379,529,398,524,423,517,442,404,385" onclick="dartThrown(this.id)" id="I10"  href="#" />
+					<area shape="poly" coords="611,496,623,502,603,535,574,569,564,559,589,531" onclick="dartThrown(this.id)" id="D15"  href="#" />
+					<area shape="poly" coords="607,494,587,527,561,556,502,497,520,477,533,456" onclick="dartThrown(this.id)" id="O15"  href="#" />
+					<area shape="poly" coords="517,447,530,454,515,475,500,493,490,485,505,469" onclick="dartThrown(this.id)" id="T15"  href="#" />
+					<area shape="poly" coords="403,388,515,445,502,466,487,481,399,393" onclick="dartThrown(this.id)" id="I15"  href="#" />
+					<area shape="poly" coords="560,561,570,572,540,599,502,621,495,609,528,589" onclick="dartThrown(this.id)" id="D2"  href="#" />
+					<area shape="poly" coords="498,499,557,559,527,585,494,606,457,529,478,517" onclick="dartThrown(this.id)" id="O2"  href="#" />
+					<area shape="poly" coords="486,487,496,496,477,512,456,525,450,514,468,503" onclick="dartThrown(this.id)" id="T2"  href="#" />
+					<area shape="poly" coords="396,395,484,485,465,500,447,511,391,399" onclick="dartThrown(this.id)" id="I2"  href="#" />
+					<area shape="poly" coords="492,610,498,623,463,637,419,649,416,634,451,627" onclick="dartThrown(this.id)" id="D17"  href="#" />
+					<area shape="poly" coords="453,531,491,606,455,621,417,630,404,548,428,542" onclick="dartThrown(this.id)" id="O17"  href="#" />
+					<area shape="poly" coords="445,516,451,527,426,538,403,544,401,529,420,526" onclick="dartThrown(this.id)" id="T17"  href="#" />
+					<area shape="poly" coords="388,400,443,513,421,522,402,526,384,401" onclick="dartThrown(this.id)" id="I17"  href="#" />
+					<area shape="poly" coords="413,635,415,648,374,651,331,648,333,634,370,637" onclick="dartThrown(this.id)" id="D3"  href="#" />
+					<area shape="poly" coords="400,548,412,631,374,634,335,631,347,547,373,550" onclick="dartThrown(this.id)" id="O3"  href="#" />
+					<area shape="poly" coords="397,530,399,545,376,546,348,545,350,530,372,532" onclick="dartThrown(this.id)" id="T3"  href="#" />
+					<area shape="poly" coords="380,402,397,527,375,529,352,527,372,402" onclick="dartThrown(this.id)" id="I3"  href="#" />
+					<area shape="poly" coords="329,633,327,647,290,637,248,620,254,608,290,623" onclick="dartThrown(this.id)" id="D19"  href="#" />
+					<area shape="poly" coords="343,547,330,630,296,622,256,605,295,531,317,540" onclick="dartThrown(this.id)" id="O19"  href="#" />
+					<area shape="poly" coords="347,529,345,544,321,537,296,528,302,514,324,523" onclick="dartThrown(this.id)" id="T19"  href="#" />
+					<area shape="poly" coords="369,401,348,526,326,521,304,513,363,400" onclick="dartThrown(this.id)" id="I19"  href="#" />
+					<area shape="poly" coords="251,606,245,618,211,597,178,568,187,559,217,584" onclick="dartThrown(this.id)" id="D7"  href="#" />
+					<area shape="poly" coords="291,528,253,603,222,583,190,556,249,498,269,513" onclick="dartThrown(this.id)" id="O7"  href="#" />
+					<area shape="poly" coords="300,512,293,524,271,512,252,496,262,485,280,499" onclick="dartThrown(this.id)" id="T7"  href="#" />
+					<area shape="poly" coords="354,393,360,398,301,510,282,498,265,483" onclick="dartThrown(this.id)" id="I7"  href="#" />
+					<area shape="poly" coords="183,555,174,564,149,535,126,498,138,492,159,524" onclick="dartThrown(this.id)" id="D16"  href="#" />
+					<area shape="poly" coords="216,453,229,473,246,494,186,553,163,525,142,491" onclick="dartThrown(this.id)" id="O16"  href="#" />
+					<area shape="poly" coords="233,444,244,464,259,481,249,493,233,475,219,452" onclick="dartThrown(this.id)" id="T16"  href="#" />
+					<area shape="poly" coords="237,444,347,387,352,391,262,480,248,465" onclick="dartThrown(this.id)" id="I16"  href="#" />
+					<area shape="poly" coords="100,414,110,456,125,494,137,488,124,452,114,413" onclick="dartThrown(this.id)" id="D8"  href="#" />
+					<area shape="poly" coords="117,412,200,399,205,426,214,449,140,487,127,454" onclick="dartThrown(this.id)" id="O8"  href="#" />
+					<area shape="poly" coords="217,397,232,440,218,448,209,426,202,399" onclick="dartThrown(this.id)" id="T8"  href="#" />
+					<area shape="poly" coords="220,396,345,376,347,382,233,441,225,419" onclick="dartThrown(this.id)" id="I8"  href="#" />
+					<area shape="poly" coords="100,327,98,369,99,411,112,409,110,370,114,329" onclick="dartThrown(this.id)" id="D11"  href="#" />
+					<area shape="poly" coords="119,331,201,343,198,375,199,396,116,408,114,368" onclick="dartThrown(this.id)" id="O11"  href="#" />
+					<area shape="poly" coords="204,344,217,346,215,374,217,393,202,395,201,369" onclick="dartThrown(this.id)" id="T11"  href="#" />
+					<area shape="poly" coords="220,347,343,366,344,373,220,393,219,369" onclick="dartThrown(this.id)" id="I11"  href="#" />
+					<area shape="poly" coords="128,244,140,250,122,293,115,326,102,323,111,285" onclick="dartThrown(this.id)" id="D14"  href="#" />
+					<area shape="poly" coords="142,251,218,291,206,318,202,340,119,327,126,293" onclick="dartThrown(this.id)" id="O14"  href="#" />
+					<area shape="poly" coords="220,293,233,298,223,324,218,343,205,341,211,317" onclick="dartThrown(this.id)" id="T14"  href="#" />
+					<area shape="poly" coords="235,300,347,356,346,365,221,342,227,323" onclick="dartThrown(this.id)" id="I14"  href="#" />
+					<area shape="poly" coords="179,173,189,183,163,213,141,246,129,239,152,207" onclick="dartThrown(this.id)" id="D9"  href="#" />
+					<area shape="poly" coords="191,186,251,246,232,269,220,289,143,249,164,217" onclick="dartThrown(this.id)" id="O9"  href="#" />
+					<area shape="poly" coords="252,248,262,258,247,278,235,297,221,290,233,272" onclick="dartThrown(this.id)" id="T9"  href="#" />
+					<area shape="poly" coords="265,262,354,349,350,356,238,297,248,282" onclick="dartThrown(this.id)" id="I9"  href="#" />
+					<area shape="poly" coords="249,122,256,135,222,155,191,181,182,170,210,146" onclick="dartThrown(this.id)" id="D12"  href="#" />
+					<area shape="poly" coords="257,139,295,213,272,228,252,244,194,184,221,159" onclick="dartThrown(this.id)" id="O12"  href="#" />
+					<area shape="poly" coords="296,215,303,229,284,241,265,257,254,246,273,230" onclick="dartThrown(this.id)" id="T12"  href="#" />
+					<area shape="poly" coords="305,232,361,343,355,348,267,258,285,243" onclick="dartThrown(this.id)" id="I12"  href="#" />
+					<area shape="poly" coords="333,96,335,110,297,119,259,134,252,120,291,105" onclick="dartThrown(this.id)" id="D5"  href="#" />
+					<area shape="poly" coords="335,113,348,195,325,202,299,212,261,136,297,122" onclick="dartThrown(this.id)" id="O5"  href="#" />
+					<area shape="poly" coords="348,199,350,213,326,219,307,228,300,213,326,205" onclick="dartThrown(this.id)" id="T5"  href="#" />
+					<area shape="poly" coords="351,217,370,340,364,342,307,230,330,222" onclick="dartThrown(this.id)" id="I5"  href="#" />
+					<area shape="circle" coords="376,371,12" onclick="dartThrown(this.id)" id="DB"  href="#" />
+					<area shape="circle" coords="376,371,29" onclick="dartThrown(this.id)" id="B"  href="#" />
+					<area shape="circle" coords="375,375,375" onclick="dartThrown(this.id)" id="0"  href="#" />
+				</map>
+			</div>
+			<div class="scorescontainer">
+			<!-- <label for="dart1" class="dartscorelabel">Dart 1:</label> -->
+			<input type="text" name="dart1" id="dart1" class="dartscoreinput"></input>
+			
+			<!-- <label for="dart2" class="dartscorelabel">Dart 2:</label> -->
+			<input type="text" name="dart2" id="dart2" class="dartscoreinput"></input>
+			
+			<!-- <label for="dart3" class="dartscorelabel">Dart 3:</label> -->
+			<input type="text" name="dart3" id="dart3" class="dartscoreinput" ></input>
+						
+			<input type="text" id="lastvisit" class="dartscoreinput"></input>
+			<label for="lastvisit" id="lastvisitlabel" class="dartscorelabel">Last Visit:</label>
+			<!--button onclick="sendDarts()" class="gobutton"></button-->
+			</div>
+		</div>
+</div>
+	</body>
+</html>
